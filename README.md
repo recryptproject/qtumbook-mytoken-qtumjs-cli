@@ -1,4 +1,4 @@
-See [companion tutorial](https://github.com/qtumproject/qtumbook/blob/master/part2/erc20-js.md).
+See [companion tutorial](https://github.com/recryptproject/recryptbook/blob/master/part2/erc20-js.md).
 
 # A NodeJS CLI Tool For ERC20 Token
 
@@ -7,14 +7,14 @@ Install dependencies
 ```
 yarn install
 ```
-## Running Qtum
+## Running Recrypt
 
 ```
 docker run -it --rm \
   --name mytoken \
   -v `pwd`:/dapp \
-  -p 4889:3889 \
-  hayeah/qtumportal
+  -p 4889:8489 \
+  hayeah/recryptportal
 ```
 
 ## Check Balance

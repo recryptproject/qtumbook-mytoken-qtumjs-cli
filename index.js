@@ -3,12 +3,12 @@ const ora = require("ora")
 const parseArgs = require("minimist")
 
 const {
-  Qtum,
-} = require("qtumjs")
+  Recrypt,
+} = require("recryptjs")
 
 const repoData = require("./solar.json")
-const qtum = new Qtum("http://qtum:test@localhost:4889", repoData)
-const myToken = qtum.contract("zeppelin-solidity/contracts/token/CappedToken.sol")
+const recrypt = new Recrypt("http://recrypt:test@localhost:4889", repoData)
+const myToken = recrypt.contract("zeppelin-solidity/contracts/token/CappedToken.sol")
 
 async function totalSupply() {
   const result = await myToken.call("totalSupply")
